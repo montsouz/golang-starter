@@ -19,15 +19,15 @@ If you're going to run via docker
 
 It is very similar to commom Node + Express project, with routes,models and handlers (controllers) folder.
 
-  .
-    ├── ...
-    ├── src                   
-    │   ├── db                 # package that integrates with MongoDb
-    │   ├── handlers             # here is where you're going to deal with incoming requests
-    |   ├── models               # The models for MongoDB
-    │   └── routes
-    |       |── routes.go               # Routes main file
-    └── ...
+        .
+        ├── ...
+        ├── src                   
+        │   ├── db                 # package that integrates with MongoDb
+        │   ├── handlers             # here is where you're going to deal with incoming requests
+        |   ├── models               # The models for MongoDB
+        │   └── routes
+        |       |── routes.go               # Routes main file
+        └── ...
 
 
 
