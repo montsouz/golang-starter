@@ -1,7 +1,9 @@
 # Go, MongoDB and Docker 
 
-A simple Golang API skeleton heavly inspired by NodeJs + Express aplications.That way it is easier for 
+A simple Golang API skeleton heavly inspired by NodeJs + Express + MongoDB aplications.That way it is easier for 
 Node developers to start creating new performant APIs with Go. 
+
+This is a work in progress.
 
 ## How to run 
 
@@ -15,5 +17,18 @@ If you're going to run via docker
 
 ## Organization
 
-## Adding routes
+It is very similar to commom Node + Express project, with routes,models and handlers (controllers) folder.
+
+  .
+    ├── ...
+    ├── src                   
+    │   ├── db                 # package that integrates with MongoDb
+    │   ├── handlers             # here is where you're going to deal with incoming requests
+    |   ├── models               # The models for MongoDB
+    │   └── routes
+    |       |── routes.go               # Routes main file
+    └── ...
+
+
+
 
