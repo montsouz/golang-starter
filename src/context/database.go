@@ -30,7 +30,7 @@ func GetMongoSession() *mgo.Session {
 //Init my db
 func getNewSession() (*mgo.Session, error) {
 	// Connect to mongo
-	session, err := mgo.Dial("localhost:27017")
+	session, err := mgo.Dial(GoDotEnvVariable("DATABASE_URL") + ":" + GoDotEnvVariable("DATABASE_PORT"))
 	if err != nil {
 		log.Fatalln(err)
 		log.Fatalln("mongo err")

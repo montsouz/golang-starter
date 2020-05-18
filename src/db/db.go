@@ -11,7 +11,7 @@ import (
 //GetModel of a db
 func GetModel(model string) *mgo.Collection {
 	session := context.GetMongoSession()
-	return session.DB("app").C(model)
+	return session.DB(context.GoDotEnvVariable("DATABASE_NAME")).C(model)
 }
 
 //Insert data in a db model
