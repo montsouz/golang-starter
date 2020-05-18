@@ -18,7 +18,6 @@ func GetMongoSession() *mgo.Session {
 		var err error
 
 		mongoSession, err = getNewSession()
-		fmt.Println("{}", mongoSession)
 		if err != nil {
 			errorMsg := fmt.Sprintf("Error on start database: %s", err.Error())
 			panic(errorMsg)

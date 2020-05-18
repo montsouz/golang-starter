@@ -4,7 +4,7 @@ import "../handlers"
 
 //GetPostRoutes to get some post routes
 func GetPostRoutes() []CustomRoute {
-	var postReoutes = []CustomRoute{
+	var postRoutes = []CustomRoute{
 		CustomRoute{
 			url:     "/posts",
 			handler: handlers.CreatePost,
@@ -17,6 +17,6 @@ func GetPostRoutes() []CustomRoute {
 		},
 	}
 
-	return postReoutes
+	return postRoutes
 
 }
