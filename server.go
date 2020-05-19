@@ -8,7 +8,7 @@ import (
 
 	//Framework
 
-	routes "./src/routes"
+	routes "./routes"
 )
 
 func main() {
